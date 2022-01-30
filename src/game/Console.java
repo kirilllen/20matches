@@ -19,7 +19,7 @@ public class Console {
 
     public void printComputerTakeMatches(int numberComputerTook, int numberMatchesLost) {
         System.out.println("Я возьму " + numberComputerTook + ". На столе осталось "+numberMatchesLost + " спичек." +
-                            "теперь Ваш ход");
+                            "теперь Ваш ход. Введите количество спичек");
     }
 
     public void printError() {
@@ -28,6 +28,10 @@ public class Console {
 
     public int readNumberOfMatches() {
         return scanner.nextInt();
+    }
+
+    public void printComputerWin() {
+        System.out.println("Кажется я победил!");
     }
 
 
